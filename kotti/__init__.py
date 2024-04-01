@@ -1,8 +1,8 @@
 import os.path
 
 import pkg_resources
-from pyramid.authentication import AuthTktAuthenticationPolicy
-from pyramid.authorization import ACLAuthorizationPolicy
+from pyramid.authentication import AuthTktAuthenticationPolicy  # pyramid2.0 废弃
+from pyramid.authorization import ACLAuthorizationPolicy  # pyramid2.0 废弃
 from pyramid.config import Configurator
 from pyramid.events import BeforeRender
 from pyramid.threadlocal import get_current_registry
