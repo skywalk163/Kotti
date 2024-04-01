@@ -180,7 +180,7 @@ class TestGroups:
 
         request = DummyRequest()
         auth = CallbackAuthenticationPolicy()
-        auth.unauthenticated_userid = lambda *args: "bob"
+        auth.unauthenticated_userid = lambda *args: "bob"  # pyramid2.0 废弃
         auth.callback = list_groups_callback
 
         request.context = root
