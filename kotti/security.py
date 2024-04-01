@@ -50,7 +50,7 @@ def get_principals() -> "Principals":
 
 # @request_cache(lambda request: None)
 def get_user(request: "Request") -> Optional["Principal"]:
-    userid = request.unauthenticated_userid
+    userid = request.unauthenticated_userid  # pyramid2.0 废弃
     return get_principals().get(userid)
 
 
