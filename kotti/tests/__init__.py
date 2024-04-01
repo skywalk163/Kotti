@@ -301,7 +301,7 @@ def webtest(app, monkeypatch, request, filedepot, dummy_mailer):
         login = marker.args[0]
         monkeypatch.setattr(
             "pyramid.authentication."
-            "AuthTktAuthenticationPolicy.unauthenticated_userid",
+            "AuthTktAuthenticationPolicy.unauthenticated_userid",  # pyramid2.0 废弃
             lambda self, req: login,
         )
     return TestApp(app)
