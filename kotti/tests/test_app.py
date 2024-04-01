@@ -2,8 +2,8 @@ from warnings import filterwarnings
 
 from mock import Mock
 from mock import patch
-from pyramid.interfaces import IAuthenticationPolicy
-from pyramid.interfaces import IAuthorizationPolicy
+from pyramid.interfaces import IAuthenticationPolicy # pyramid2.0弃用
+from pyramid.interfaces import IAuthorizationPolicy # pyramid2.0弃用
 from pyramid.interfaces import IView
 from pyramid.interfaces import IViewClassifier
 from pyramid.request import Request
